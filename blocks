@@ -1,0 +1,7 @@
+function [matrix] = blocks(n, m)
+N = ones(n,m);
+M = zeros(n,m);
+B = cat(1,M,N);
+C = cat(1,N,M);
+matrix = cat(2,C,B);
+end
